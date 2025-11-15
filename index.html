@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo-Bits - Geographic Data Visualizations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__brand">
+                    <h1>Geo-Bits</h1>
+                </div>
+                <div class="navbar__nav">
+                    <a href="#latest" class="nav-link">Latest</a>
+                    <a href="info-visuals.html" class="nav-link">Info-Visuals</a>
+                    <a href="#about" class="nav-link">About</a>
+                </div>
+                <div class="navbar__search">
+                    <input type="text" class="search-input" placeholder="Search..." id="searchInput">
+                    <button class="btn btn--primary search-btn">Search</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <h2>Discover the World Through Data</h2>
+                <p>Explore interactive geographic visualizations and stay updated with the latest geospatial insights
+                </p>
+            </div>
+        </section>
+
+        <!-- Latest Geo-Bits Section -->
+        <section id="latest" class="section">
+            <div class="container">
+                <h2 class="section__title">Latest Geo-Bits</h2>
+                <div class="news-grid">
+                    <!-- News articles will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Visualizations Section -->
+        <section id="visualizations" class="section">
+            <div class="container">
+                <h2 class="section__title">Info-Visuals</h2>
+                <div class="visualization-grid">
+                    <!-- Visualizations will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Detailed View Modal -->
+    <div class="modal hidden" id="detailModal">
+        <div class="modal__overlay" id="modalOverlay"></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <button class="modal__close" id="modalClose">&times;</button>
+                <nav class="breadcrumb">
+                    <a href="#" class="breadcrumb__link" id="breadcrumbHome">Home</a>
+                    <span class="breadcrumb__separator">></span>
+                    <span class="breadcrumb__current" id="breadcrumbCurrent">Visualization</span>
+                </nav>
+            </div>
+            <div class="modal__body" id="modalBody">
+                <!-- Content will be populated by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section Styled Like Footer -->
+    <section id="about" class="section"
+        style="background:var(--color-surface);border-top:1px solid var(--color-border);">
+        <div class="container" style="padding-top:32px;padding-bottom:32px;">
+            <div style="display:flex;flex-wrap:wrap;justify-content:space-between;">
+                <div style="min-width:220px;flex:1;margin-bottom:24px;">
+                    <h2 style="color:var(--color-primary);font-size:2rem;margin-bottom:12px;">Geo Bits</h2>
+                    <p style="color:var(--color-text-secondary);font-size:1rem;">
+                        Info visuals & current affairs news—curated and visualized. Explore trending news from trusted
+                        external media, plus exclusive graphics on geopolitics, economy, and world affairs.
+                    </p>
+                    <p style="color:var(--color-text);margin-top:14px;">
+                        <strong>Founder:</strong> Somesh Kota
+                    </p>
+                </div>
+                <div style="min-width:180px;flex:1;margin-bottom:24px;">
+                    <h3 style="color:var(--color-text);font-size:1.1rem;margin-bottom:10px;">What We Cover</h3>
+                    <ul style="list-style:none;padding:0;margin:0;">
+                        <li style="margin-bottom:10px;"><span
+                                style="color:var(--color-primary);margin-right:5px;">&#10148;</span>Geopolitics</li>
+                        <li style="margin-bottom:10px;"><span
+                                style="color:var(--color-primary);margin-right:5px;">&#10148;</span>Trade & Economy</li>
+                        <li style="margin-bottom:10px;"><span
+                                style="color:var(--color-primary);margin-right:5px;">&#10148;</span>General Affairs</li>
+                        <li><span style="color:var(--color-primary);margin-right:5px;">&#10148;</span>Original Visual
+                            Explainers</li>
+                    </ul>
+                </div>
+                <div style="min-width:220px;flex:1;margin-bottom:24px;">
+                    <h3 style="color:var(--color-text);font-size:1.1rem;margin-bottom:10px;">How Geo Bits Works</h3>
+                    <ul style="list-style:none;padding:0;margin:0;">
+                        <li style="margin-bottom:10px;">Curated News,<br>redirecting to leading
+                            publications</li>
+                        <li>Exclusive, easy-to-understand<br>info-visuals by our team</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Loading Animation -->
+    <div class="loading hidden" id="loadingSpinner">
+        <div class="loading__spinner"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
