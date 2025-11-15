@@ -43,7 +43,7 @@
             "preview": "A comparative visualization of No. of companies got funding...",
             "category": "Economics",
             "dataSource": "World Trade Organization",
-            "imageUrl": "images/Top-funding-countries-in-AI-project.PNG",
+            "imageUrl": "images/Top-funding-countries-in-AI-project.png",
             "externalLink": "https://your-link-here.com"
         },
         {
@@ -52,12 +52,13 @@
             "preview": "A comparative visualization of market capitalization...",
             "category": "Economics",
             "dataSource": "Frankfurt Stock Exchange",
-            "imageUrl": "images/Ai-investments.PNG",
+            "imageUrl": "images/Ai-investments.png",
             "externalLink": "https://your-link-here.com"
         }
     ]
 
 }
+
 
 
 
