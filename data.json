@@ -43,7 +43,7 @@
             "preview": "A comparative visualization of No. of companies got funding...",
             "category": "Economics",
             "dataSource": "World Trade Organization",
-            "imageUrl": "images/Top-funding-countries-in-AI-project.png",
+            "imageUrl": "images/Top-funding-countries-in-AI-project.PNG",
             "externalLink": "https://your-link-here.com"
         },
         {
@@ -58,5 +58,6 @@
     ]
 
 }
+
 
 
